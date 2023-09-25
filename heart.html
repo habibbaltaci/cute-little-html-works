@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Kalp Şekli</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.heart {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 20px;
+}
+
+.heart::before,.heart::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 200px;
+    position: absolute;
+}
+
+.heart::before {
+    top: -100px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 100px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    
+</body>
+</html>
